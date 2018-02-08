@@ -1,12 +1,21 @@
+@import "variables";
+
 .social-logo {
     height: 75px;
     width: 75px;
+    padding: 0;
+}
+
+.main-block {
+    margin-top: 3%;
 }
 
 .me {
-    margin-top: 10%;
+    padding-top: 7%;
 }
 
-.hi {
-    margin-top: 23%;
+.content {
+    box-shadow: $box-shadow;
+    background-color: $content-background;
+    padding: 5px;
 }
