@@ -14,6 +14,10 @@
   background-color: rgba(0, 0, 0, 0.7);
   padding: 5px; }
 
+.modal {
+  height: 100% !important;
+  width: 90%; }
+
 body {
   background-color: #e0e0e0;
   background-image: url("../images/background-image.jpeg");

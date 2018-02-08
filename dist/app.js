@@ -31,11 +31,20 @@ const showProfile = () => {
     });
 };
 
+const modalInitialize = () => {
+    $(document).ready(function(){
+        // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+        $('.modal').modal();
+      });    
+};
+      
+
 const init = () => {
     aboutButtonHover();
     projectButtonHover();
     showProjects();
     showProfile();
+    modalInitialize();
 };
 
 module.exports = {init};
