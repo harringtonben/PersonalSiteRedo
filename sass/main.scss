@@ -1,3 +1,7 @@
+@import "variables";
+@import "profile";
+
 body {
-    background-color: #e0e0e0;
+    background-color: $background-color;
+    color: $text-color;
 }

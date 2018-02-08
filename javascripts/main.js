@@ -2,4 +2,4 @@
 
 const events = require("./events");
 
-events.iconHover();
+events.init();
