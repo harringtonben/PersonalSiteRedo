@@ -16,9 +16,25 @@ const projectButtonHover = () => {
     });
 };
 
+const showProjects = () => {
+    $("#projects").click(() => {
+        $("#profile").addClass("hidden");
+        $("#projectDemos").removeClass("hidden");
+    });
+};
+
+const showProfile = () => {
+    $("#about").click(() => {
+        $("#projectDemos").addClass("hidden");
+        $("#profile").removeClass("hidden");
+    });
+};
+
 const init = () => {
     aboutButtonHover();
     projectButtonHover();
+    showProjects();
+    showProfile();
 };
 
 module.exports = {init};
