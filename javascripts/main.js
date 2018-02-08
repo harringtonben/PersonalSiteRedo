@@ -1,3 +1,5 @@
 'use strict';
 
-console.log("Hello world!");
+const events = require("./events");
+
+events.init();

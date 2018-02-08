@@ -1,3 +1,9 @@
+@import "variables";
+@import "profile";
+
 body {
-    background-color: blue;
+    background-color: $background-color;
+    background-image: url("../images/background-image.jpeg");
+    background-size: cover;
+    color: $text-color;
 }
