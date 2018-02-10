@@ -17,9 +17,35 @@ const projectButtonHover = () => {
     });
 };
 
+const showProjects = () => {
+    $("#projects").click(() => {
+        $("#profile").addClass("hidden");
+        $("#projectDemos").removeClass("hidden");
+        $(".demo").removeClass("hidden");
+    });
+};
+
+const showProfile = () => {
+    $("#about").click(() => {
+        $("#projectDemos").addClass("hidden");
+        $("#profile").removeClass("hidden");
+    });
+};
+
+const modalInitialize = () => {
+    $(document).ready(function(){
+        // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+        $('.modal').modal();
+      });    
+};
+      
+
 const init = () => {
     aboutButtonHover();
     projectButtonHover();
+    showProjects();
+    showProfile();
+    modalInitialize();
 };
 
 module.exports = {init};
