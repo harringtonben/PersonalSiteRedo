@@ -21,6 +21,7 @@ const showProjects = () => {
     $("#projects").click(() => {
         $("#profile").addClass("hidden");
         $("#projectDemos").removeClass("hidden");
+        $(".demo").removeClass("hidden");
     });
 };
 
