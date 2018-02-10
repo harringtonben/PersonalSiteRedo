@@ -8,10 +8,13 @@
     height: 200px;  
 }
 
-.demo-launch {
-    margin-left: 25%;
+.button {
+    padding: 5px;
 }
 
 .demo {
-    max-height: 400px;
+    box-shadow: $box-shadow;
+    background-color: $content-background;
+    padding: 5px;
+    margin-bottom: 15px;
 }
