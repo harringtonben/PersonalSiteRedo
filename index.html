@@ -15,7 +15,7 @@
         <nav>
             <div class="nav-wrapper grey darken-4">
             <a href="#!" class="brand-logo"></a>
-            <ul class="right hide-on-med-and-down">
+            <ul class="right">
                 <li><a href="#"><i class="material-icons" id="about">face</i></a></li>
                 <li><a href="#"><i class="material-icons" id="projects">computer</i></a></li>
             </ul>
@@ -24,16 +24,22 @@
     </div>
 <div class="container row main-block" id="profile">
     <div class="col s10 offset-s1 content hoverable">
-        <div class="row me">
-            <h2 class="col s4 offset-s4 hi">Hi There.</h2>
+        <div class="row me center-align">
+            <h2 class="col s12  hide-on-small-only hi">Hi There.</h2>
+            <h4 class="col s12  hide-on-med-and-up hi">Hi There.</h4>
         </div>  
         <div class="row">
-            <p class="col s8 offset-s2">
+            <p class="col m8 offset-m2 col s12  ">
                 I'm Ben and I am a software developer living in Nashville, Tennessee. I started my journey here like most people, in the music industry. After a few years of grinding it out trying to make it, I decided that the business may not be for me, and led me to a new passion, software. I am currently enrolled at Nashville Software School in the part-time web development program. When I am not coding, I enjoy spending time with my wife and my dog and pretending like I know how to cook and barbecue.
-                <ul class="row">
+                <ul class="row show-on-medium-and-up hide-on-small-only center-align">
                     <li class="col s3 offset-s2"><a href="mailto:ben@harringtonben.com"><img class="social-logo" src="images/icon-email.png" alt="email"></a></li>
                     <li class="col s3"><a href="http://www.github.com/harringtonben"><img class="social-logo" src="images/icon-github.png" alt="github"></a></li>
                     <li class="col s3"><a href="https://www.linkedin.com/in/ben-harrington-813b123b/"><img class="social-logo" src="images/icon-linkedin.png" alt="linkedin"></a></li>
+                </ul>
+                <ul class="row hide-on-med-and-up center-align">
+                    <li class="col s3 offset-s2"><a href="mailto:ben@harringtonben.com"><img class="social-logo-mobile" src="images/icon-email.png" alt="email"></a></li>
+                    <li class="col s3"><a href="http://www.github.com/harringtonben"><img class="social-logo-mobile" src="images/icon-github.png" alt="github"></a></li>
+                    <li class="col s3"><a href="https://www.linkedin.com/in/ben-harrington-813b123b/"><img class="social-logo-mobile" src="images/icon-linkedin.png" alt="linkedin"></a></li>
                 </ul>
             </p>
         </div>  
@@ -42,27 +48,30 @@
 
 <div class="container row main-block" id="projectDemos">
     
-    <div class="col s5 offset-s1 hidden demo">
-        <h4 class="center-align">Cellar To Seller</h4>
+    <div class="col m5 offset-m1 col s12 hide demo">
+        <h4 class="center-align hide-on-small-only">Cellar To Seller</h4>
+        <h5 class="center-align hide-on-med-and-up">Cellar To Seller</h5>
         <img class="demo-gif" src="./images/cellartoseller.gif" alt="Cellar to Seller">
         <div class="center-align button">
-            <a class="waves-effect waves-light btn modal-trigger demo-launch" href="#cellartoseller">Launch Demo</a>
+            <a class="waves-effect waves-light btn modal-trigger demo-launch hide-on-small-only" href="#cellartoseller">Launch Demo</a>
         </div>    
     </div>
 
-    <div class="col s5 offset-s1 hidden demo">
-        <h4 class="center-align">Pinterest Clone</h4>
+    <div class="col m5 offset-m1 col s12 hide demo">
+        <h4 class="center-align hide-on-small-only">Pinterest Clone</h4>
+        <h5 class="center-align hide-on-med-and-up">Pinterest Clone</h5>
         <img class="demo-gif" src="./images/pinterest.gif" alt="Pinterest Clone">
         <div class="center-align button">
-            <a class="waves-effect waves-light btn modal-trigger demo-launch" href="#pinterest">Launch Demo</a>
+            <a class="waves-effect waves-light btn modal-trigger demo-launch hide-on-small-only" href="#pinterest">Launch Demo</a>
         </div>
     </div>
 
-    <div class="col s5 offset-s1 hidden demo">
-        <h4 class="center-align">Weather App</h4>
+    <div class="col m5 offset-m1 col s12 hide demo">
+        <h4 class="center-align hide-on-small-only">Weather App</h4>
+        <h5 class="center-align hide-on-med-and-up">Weather App</h5>
         <img class="demo-gif" src="./images/WeatherApp.gif" alt="Weather App">
         <div class="center-align button">
-            <a class="waves-effect waves-light btn modal-trigger demo-launch" href="https://github.com/harringtonben/localweatherapp">View On Gitbub</a>
+            <a class="waves-effect waves-light btn modal-trigger demo-launch hide-on-small-only" href="https://github.com/harringtonben/localweatherapp">View On Gitbub</a>
         </div>
     </div>
 
@@ -71,7 +80,7 @@
                 <iframe src="https://cellar-2-seller.firebaseapp.com/" height="500" width="100%"></iframe>
             </div>
             <div class="modal-footer">
-              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Dismiss</a>
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Dismiss</a>
             </div>
           </div>
     </div>
@@ -81,7 +90,7 @@
                 <iframe src="https://frenchtoast-pinterest-clone.firebaseapp.com" height="500" width="100%"></iframe>
             </div>
             <div class="modal-footer">
-              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Dismiss</a>
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Dismiss</a>
             </div>
           </div>
     </div>
