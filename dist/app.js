@@ -19,16 +19,16 @@ const projectButtonHover = () => {
 
 const showProjects = () => {
     $("#projects").click(() => {
-        $("#profile").addClass("hidden");
-        $("#projectDemos").removeClass("hidden");
-        $(".demo").removeClass("hidden");
+        $("#profile").addClass("hide");
+        $("#projectDemos").removeClass("hide");
+        $(".demo").removeClass("hide");
     });
 };
 
 const showProfile = () => {
     $("#about").click(() => {
-        $("#projectDemos").addClass("hidden");
-        $("#profile").removeClass("hidden");
+        $("#projectDemos").addClass("hide");
+        $("#profile").removeClass("hide");
     });
 };
 

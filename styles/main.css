@@ -1,6 +1,20 @@
+body {
+  background-color: #e0e0e0;
+  background: url("../images/background-image.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff; }
+
 .social-logo {
   height: 75px;
   width: 75px;
+  padding: 0; }
+
+.social-logo-mobile {
+  height: 50px;
+  width: 50px;
   padding: 0; }
 
 .main-block {
@@ -30,12 +44,3 @@
   background-color: rgba(0, 0, 0, 0.7);
   padding: 5px;
   margin-bottom: 15px; }
-
-body {
-  background-color: #e0e0e0;
-  background-image: url("../images/background-image.jpeg");
-  background-size: cover;
-  color: #fff; }
-
-.hidden {
-  display: none; }
