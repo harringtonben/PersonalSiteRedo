@@ -2,11 +2,6 @@
 
 body {
     background-color: $background-color;
-    background: url("../images/background-image.jpeg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     color: $text-color;
 }
 
@@ -28,10 +23,4 @@ body {
 
 .me {
     padding-top: 7%;
-}
-
-.content {
-    box-shadow: $box-shadow;
-    background-color: $content-background;
-    padding: 5px;
 }
