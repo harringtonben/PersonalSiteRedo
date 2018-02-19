@@ -2,16 +2,16 @@
 
 const aboutButtonHover = () => {
     $("#about").mouseover(() => {
-        $("#about").addClass("animated bounce").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () => {
-            $("#about").removeClass("animated bounce");
+        $("#about").addClass("animated pulse").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () => {
+            $("#about").removeClass("animated pulse");
         });
     });
 };
 
 const projectButtonHover = () => {
     $("#projects").mouseover(() => {
-        $("#projects").addClass("animated bounce").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () => {
-            $("#projects").removeClass("animated bounce");
+        $("#projects").addClass("animated pulse").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () => {
+            $("#projects").removeClass("animated pulse");
         });
     });
 };
