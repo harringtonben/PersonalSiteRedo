@@ -35,6 +35,30 @@ body {
 }
 
 .profile-photo {
-    max-height: 240px;
-    max-width: 305px;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    border-radius: 50%;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+}
+
+.header-image {
+    min-height: 325px;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(../images/background-image.jpeg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: inline-block;
+    box-shadow: inset 0 0 200px 200px rgba(36, 70, 105, 0.74);
 }
