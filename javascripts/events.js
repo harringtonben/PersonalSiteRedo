@@ -19,6 +19,10 @@ const projectButtonHover = () => {
 const showProjects = () => {
     $(".projects").click(() => {
         $("#profile").addClass("hide");
+        $("#mainHeader").addClass("hide");
+        $("#mainHeaderM").addClass("hide");
+        $("#projectsHeader").removeClass("hide");
+        $("#projectsHeaderM").removeClass("hide");
         $("#projectDemos").removeClass("hide");
         $(".demo").removeClass("hide");
     });
@@ -28,6 +32,10 @@ const showProfile = () => {
     $(".about").click(() => {
         $("#projectDemos").addClass("hide");
         $("#profile").removeClass("hide");
+        $("#projectsHeader").addClass("hide");
+        $("#projectsHeaderM").addClass("hide");
+        $("#mainHeader").removeClass("hide");
+        $("#mainHeaderM").removeClass("hide");
     });
 };
 

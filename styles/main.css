@@ -28,12 +28,32 @@ body {
 
 .profile-photo {
   height: 250px;
+  width: 250px;
   margin: 0;
   padding: 0;
   position: absolute;
   left: 5%;
-  top: 25%;
-  border-radius: 50%; }
+  top: 100px;
+  border-radius: 50%;
+  border: 4px solid #fff; }
+
+.profile-photo-mobile {
+  height: 250px;
+  width: 250px;
+  margin-left: 60px;
+  margin-top: 25px;
+  padding: 0;
+  border-radius: 50%;
+  border: 4px solid #fff; }
+
+.header-text {
+  position: absolute;
+  color: #fff;
+  top: 15%;
+  right: 15%; }
+
+.header-text-mobile {
+  color: #fff; }
 
 .header {
   margin: 0;
@@ -59,6 +79,7 @@ body {
 .demo-gif {
   width: 100%;
   height: 50%;
+  margin: 10px;
   box-shadow: 0px 6px 23px 0px rgba(0, 0, 0, 0.75); }
 
 .button {
