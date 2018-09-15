@@ -1,9 +1,35 @@
 'use strict';
 
-const aboutButtonHover = () => {
-    $(".about").mouseover(() => {
-        $(".about").addClass("animated pulse").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () => {
-            $(".about").removeClass("animated pulse");
+const socialLogoHover = () => {
+    $(".email").mouseover(() => {
+        $(".email").addClass("animated pulse").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () => {
+            $(".email").removeClass("animated pulse");
+        });
+    });
+
+    $(".github").mouseover(() => {
+        $(".github").addClass("animated pulse").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () => {
+            $(".github").removeClass("animated pulse");
+        });
+    });
+
+    $(".linkedin").mouseover(() => {
+        $(".linkedin").addClass("animated pulse").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () => {
+            $(".linkedin").removeClass("animated pulse");
+        });
+    });
+
+    $(".twitter").mouseover(() => {
+        $(".twitter").addClass("animated pulse").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () => {
+            $(".twitter").removeClass("animated pulse");
+        });
+    });
+};
+
+const techIconHover = () => {
+    $(".tech-icons").mouseover(() => {
+        $(".tech-icons").addClass("animated pulse").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () => {
+            $(".tech-icons").removeClass("animated pulse");
         });
     });
 };
@@ -16,44 +42,18 @@ const projectButtonHover = () => {
     });
 };
 
-const showProjects = () => {
-    $(".projects").click(() => {
-        $("#profile").addClass("hide");
-        $("#mainHeader").addClass("hide");
-        $("#mainHeaderM").addClass("hide");
-        $("#projectsHeader").removeClass("hide");
-        $("#projectsHeaderM").removeClass("hide");
-        $("#projectDemos").removeClass("hide");
-        $(".demo").removeClass("hide");
-    });
+const techAnimation = () => {
+        $(".tech").addClass("animated slideInUp").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () => {
+            $(".tech").removeClass("animated slideInUp");
+        });
 };
 
-const showProfile = () => {
-    $(".about").click(() => {
-        $("#projectDemos").addClass("hide");
-        $("#profile").removeClass("hide");
-        $("#projectsHeader").addClass("hide");
-        $("#projectsHeaderM").addClass("hide");
-        $("#mainHeader").removeClass("hide");
-        $("#mainHeaderM").removeClass("hide");
-    });
-};
-
-const modalInitialize = () => {
-    $(document).ready(function(){
-        // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-        $('.modal').modal();
-        $(".button-collapse").sideNav();
-      });    
-};
-      
 
 const init = () => {
-    aboutButtonHover();
+    socialLogoHover();
     projectButtonHover();
-    showProjects();
-    showProfile();
-    modalInitialize();
+    techAnimation();
+    techIconHover();
 };
 
 module.exports = {init};
